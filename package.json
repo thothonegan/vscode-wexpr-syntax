@@ -1,0 +1,35 @@
+{
+    "name": "vscode-wexpr-syntax",
+    "displayName": "Wexpr Language Support",
+    "description": "Wexpr language support for VSCode",
+    "publisher": "thothonegan",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thothonegan/vscode-wexpr-syntax"
+    },
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "Syntax",
+        "Wexpr"
+    ],
+    "license": "MIT",
+    "contributes": {
+        "languages": [{
+            "id": "wexpr",
+            "aliases": ["Wexpr", "wexpr"],
+            "extensions": [".wexpr"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "wexpr",
+            "scopeName": "source.wexpr",
+            "path": "./syntaxes/wexpr.tmLanguage.json"
+        }]
+    }
+}
